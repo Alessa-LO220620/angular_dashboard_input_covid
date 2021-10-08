@@ -1,0 +1,72 @@
+<div class="container-fluid">
+    <form #dashForm="ngForm" class="navbar-form navbar-left">
+        <div class="container" class="form-group">
+        <h3>Registre aqui número de casos de COVID-19</h3>     
+        <select name="mes" id="mes" value= "mes" [(ngModel)]="dado.mes[0]" class="form-control">
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+        </select>
+        <input type="number" id="casos" name="casos" [(ngModel)]="dado.casos" class="form-control">
+        <button (click)="enviarDados()" class="btn btn-default">Enviar</button>
+    <hr>
+        <div class="col-lg-6">
+            <div id="column_chart_casos"></div>
+        </div>
+
+
+
+        <!-- <form #dashForm="ngForm" class="navbar-form navbar-left">
+            <div class="container" class="form-group">
+            <h3>Registre aqui número de Hospitalizados por COVID-19</h3>     
+            <select name="mes" id="mes" value= "mes" [(ngModel)]="dado.mes[0]" class="form-control">
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+            </select>
+            <input type="number" id="hospitalizados" name="hospitalizados" [(ngModel)]="dado.hospitalizados" class="form-control">
+            <button (click)="enviarDados()" class="btn btn-default" >Enviar</button>
+            <hr>
+            <div class="col-lg-6">
+                <div id="column_chart_hospitalizados"></div>
+            </div>
+            <hr>
+            
+            <form #dashForm="ngForm" class="navbar-form navbar-left">
+                <div class="container" class="form-group">
+                <h3>Registre aqui número de Leitos Ocupados nos meses abaixo</h3>     
+                <select name="mes" id="mes" value= "mes" [(ngModel)]="dado.mes[0]" class="form-control">
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                </select>
+                <input type="number" id="leitos" name="leitos" [(ngModel)]="dado.leitos" class="form-control">
+                <button (click)="enviarDados()" class="btn btn-default" >Enviar</button>
+                <hr>
+                <div class="col-lg-6">
+                    <div id="line_chart_leitos"></div>
+                </div>
+                <hr>
+            
+                <form #dashForm="ngForm" class="navbar-form navbar-left">
+                <div class="container" class="form-group">
+                <h3>Registre aqui número de Leitos Ocupados nos meses abaixo</h3>     
+                <select name="mes" id="mes" value= "mes" [(ngModel)]="dado.mes[0]" class="form-control">
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                </select>
+                <input type="number" id="obitos" name="obitos" [(ngModel)]="dado.obitos" class="form-control">
+                <button (click)="enviarDados()" class="btn btn-default" >Enviar</button>
+                <hr>
+                <div class="col-lg-6">
+                    <div id="line_chart_obitos"></div>
+                </div> -->
+
+
+</div>
+
