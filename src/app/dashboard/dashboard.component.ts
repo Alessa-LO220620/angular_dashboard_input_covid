@@ -18,8 +18,8 @@ export class DashboardComponent implements OnInit {
   private dados: any
   public dado: Dado = {
     mes:[6,'junho'], 
-    casos : 0,
-    // hospitalizados: 0,
+    casos : 0
+    // hospitalizados: 0
     // leitos: 0,
     // obitos: 0
   }
@@ -69,7 +69,7 @@ export class DashboardComponent implements OnInit {
    */
   exibirGraficos(): void {
   	this.exibirColumnChart_casos();
-    // this.exibirColumnChart();
+    // this.exibirColumnChart_hospi();
   	// this.exibirLineChart_leitos();
     // this.exibirLineChart_obitos();
   	

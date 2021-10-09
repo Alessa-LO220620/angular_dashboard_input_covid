@@ -1,1 +1,4 @@
-
+#container{
+    background: linear-gradient(90deg, rgba(225,240,76,1) 0%, rgba(100,148,228,1) 31%, rgba(42,207,94,1) 100%);
+    text-align: center;
+}

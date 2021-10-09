@@ -15,7 +15,7 @@ export class  DadosService{
 	constructor() {}
 
 	enviarDados(dado: Dado):void{
-		let index = dado.mes[0];
+		let index = dado.mes[0] - 6;
 		this.dado[index][1] = dado.casos;
 		// this.dado[index][2] = dado.hospitalizados;
 		// this.dado[index][3] = dado.leitos;
